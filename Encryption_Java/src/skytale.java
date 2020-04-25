@@ -42,6 +42,8 @@ public class skytale {
 
         input.close();
         
+        /*Aufruf der skytale_encode methode und 
+        Ausgabe des verschlüsselten Texts*/
         encoded = skytale_encode(text, key);
         System.out.println(encoded);
 

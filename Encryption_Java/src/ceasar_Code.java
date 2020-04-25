@@ -65,34 +65,34 @@ public class ceasar_Code {
 		Scanner encode_input = new Scanner(System.in);
 
 		System.out.print("Gib einen unverschlüsselten String ein: ");
-		String text = (encode_input.nextLine()).toLowerCase();
+		String encode_text = (encode_input.nextLine()).toLowerCase();
 
 		System.out.print("Gib nun einen Schlüssel an: ");
-		Integer key = encode_input.nextInt();
+		Integer encode_key = encode_input.nextInt();
 
 		//schließen des Scanners
 		encode_input.close();
 
 		/*Aufruf der verschluesseln Methode und Ausgeben 
 		des verschlüsselten Texts*/
-		String encoded = verschluesseln(text, key);
+		String encoded = verschluesseln(encode_text, encode_key);
 		System.out.println(encoded);
 
 		//Scanner für den Input fer verschluesseln function
 		Scanner decode_input = new Scanner(System.in); 
 
 		System.out.print("Gib einen verschlüsselten String ein: ");
-		String text_2 = (decode_input.nextLine()).toLowerCase();
+		String decode_text = (decode_input.nextLine()).toLowerCase();
 
 		System.out.print("Gib nun den Schlüssel an: ");
-		Integer key_2 = decode_input.nextInt();
+		Integer decode_key = decode_input.nextInt();
 
 		//schließen des Scanners
 		decode_input.close();
 
 		/*Aufruf der entschluesseln Methode und Ausgeben 
 		des entschlüsselten Texts*/
-		String decoded = entschluesseln(text_2, key_2);
+		String decoded = entschluesseln(decode_text, decode_key);
 		System.out.println(decoded);
 	}
 }

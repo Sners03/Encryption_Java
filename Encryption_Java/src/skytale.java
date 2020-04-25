@@ -26,6 +26,7 @@ public class skytale {
         return encoded;
     }
 
+    //main function
     public static void main(String[]args){
         String encoded;
         String text;
